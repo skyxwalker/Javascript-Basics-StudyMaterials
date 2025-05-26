@@ -23,6 +23,7 @@ const fetchData = async()=>{
 }
 fetchData();
 
+// function to take only title from the api using For Loop
 const fetchData1 = async()=>{
     const response = await fetch('https://fakestoreapi.com/products');
     const data = await response.json();
@@ -33,3 +34,25 @@ const fetchData1 = async()=>{
 
 }
 fetchData1();
+
+// function to take only title from the api using For of Loop
+const fetchData2 = async()=>{
+    const response = await fetch('https://fakestoreapi.com/products');
+    const data = await response.json();
+
+    for (const item of data) {
+        console.log(item.title);
+    }
+
+}
+fetchData2();
+
+// function to take only title from the api using map 
+const fetchData3 = async()=>{
+    const response = await fetch('https://fakestoreapi.com/products');
+    const data = await response.json();
+
+    const titles = data.map(item => item.title);
+    console.log(titles);
+}
+fetchData3();
