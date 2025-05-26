@@ -38,3 +38,19 @@ const arrnew = arr.filter((item)=>{
     }
 });
 console.log(arrnew);
+
+//for each function with arrow function
+arr.forEach((item)=>{
+    console.log(item);
+})
+
+
+//important note
+const newarr1 = arr.forEach((item)=>{
+    return item;
+});
+console.log(newarr1); // Output: undefined
+// forEach does not return anything, it just executes the function for each element in the array...
+// so if you want to return something, use map instead of forEach
+// forEach is used to iterate over the array and perform some operation on each element
+
