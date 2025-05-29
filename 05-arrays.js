@@ -83,14 +83,14 @@ arr.splice(4, 1); // Removing 5th element
 console.log(arr);
 
 
-
-
-
-
-
-
-
-
+//reversing an array using unshift method and map method
+console.log("Reversing an array using unshift method and map method");
+let arrr=[1,2,3,4,5];
+let ar=[];
+arrr.map((item) => {
+    ar.unshift(item ); 
+});
+console.log( ar); 
 
 
 
