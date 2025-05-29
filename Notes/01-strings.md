@@ -1,4 +1,4 @@
-# JavaScript Strings - Complete Guide
+# JavaScript - Strings
 
 ## What are Strings?
 
